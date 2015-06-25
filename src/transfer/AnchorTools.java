@@ -32,4 +32,14 @@ public class AnchorTools {
         AnchorPane.setRightAnchor(child, right);
         return child;
     }
+    public static Node topright(Node child, double top, double right){
+        AnchorPane.setTopAnchor(child, top);
+        AnchorPane.setRightAnchor(child, right);
+        return child;
+    }
+    public static Node leftright(Node child, double left, double right){
+        AnchorPane.setLeftAnchor(child, left);
+        AnchorPane.setRightAnchor(child, right);
+        return child;
+    }
 }

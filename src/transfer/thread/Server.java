@@ -29,7 +29,7 @@ public class Server implements Runnable {
     @Override
     public void run() {
         try {
-            this.serverSocket = new ServerSocket(0);
+            this.serverSocket = new ServerSocket(52565);
             running = true;
             port = serverSocket.getLocalPort() +"";
             footerBar.setText("Listening on "+ ip + " : " + port);
